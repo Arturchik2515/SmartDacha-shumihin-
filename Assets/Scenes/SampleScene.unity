@@ -1357,7 +1357,6 @@ GameObject:
   - component: {fileID: 326710045}
   - component: {fileID: 326710044}
   - component: {fileID: 326710043}
-  - component: {fileID: 326710046}
   m_Layer: 5
   m_Name: Reg
   m_TagString: Untagged
@@ -1428,7 +1427,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 326710044}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1134769354}
+        m_TargetAssemblyTypeName: ChangeLayers, Assembly-CSharp
+        m_MethodName: ChangeLayer
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1136522900}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &326710044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,23 +1478,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326710041}
   m_CullTransparentMesh: 1
---- !u!114 &326710046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326710041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f9241cc8e9b58d40829c46d282da01c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainMenu: {fileID: 0}
-  RegMenu: {fileID: 0}
-  EnterMenu: {fileID: 0}
-  ConditionMenu: {fileID: 0}
-  UserEnterMenu: {fileID: 0}
 --- !u!1 &345395322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4331,7 +4325,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 911287324}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1134769354}
+        m_TargetAssemblyTypeName: ChangeLayers, Assembly-CSharp
+        m_MethodName: ChangeLayer
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1827341454}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &911287324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4537,7 +4543,6 @@ GameObject:
   - component: {fileID: 979972529}
   - component: {fileID: 979972528}
   - component: {fileID: 979972527}
-  - component: {fileID: 979972526}
   m_Layer: 5
   m_Name: PreviousScene
   m_TagString: Untagged
@@ -4565,18 +4570,6 @@ RectTransform:
   m_AnchoredPosition: {x: -421.83, y: 973}
   m_SizeDelta: {x: 50.0325, y: 50.0325}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &979972526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979972524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c1d75667c8a2194d9f06be4897bb29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &979972527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4621,16 +4614,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 979972526}
-        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1134769354}
+        m_TargetAssemblyTypeName: ChangeLayers, Assembly-CSharp
+        m_MethodName: ChangeLayer
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1627020119}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &979972528
@@ -5543,7 +5536,7 @@ GameObject:
   - component: {fileID: 1134769353}
   - component: {fileID: 1134769354}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ChangeLay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6551,7 +6544,6 @@ GameObject:
   - component: {fileID: 1529583614}
   - component: {fileID: 1529583613}
   - component: {fileID: 1529583612}
-  - component: {fileID: 1529583611}
   m_Layer: 5
   m_Name: PreviousScene
   m_TagString: Untagged
@@ -6579,18 +6571,6 @@ RectTransform:
   m_AnchoredPosition: {x: -421.83, y: 973}
   m_SizeDelta: {x: 50.0325, y: 50.0325}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1529583611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529583609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c1d75667c8a2194d9f06be4897bb29f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1529583612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6635,16 +6615,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1529583611}
-        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1134769354}
+        m_TargetAssemblyTypeName: ChangeLayers, Assembly-CSharp
+        m_MethodName: ChangeLayer
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1627020119}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SampleScene
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1529583613
@@ -6869,7 +6849,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1708369021}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1134769354}
+        m_TargetAssemblyTypeName: ChangeLayers, Assembly-CSharp
+        m_MethodName: ChangeLayer
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1827341454}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1708369021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6990,7 +6982,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1711456167}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1134769354}
+        m_TargetAssemblyTypeName: ChangeLayers, Assembly-CSharp
+        m_MethodName: ChangeLayer
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1827341454}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1711456167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8731,6 +8735,6 @@ SceneRoots:
   - {fileID: 1134769353}
   - {fileID: 1627020123}
   - {fileID: 1136522904}
-  - {fileID: 1402374907}
   - {fileID: 1827341458}
+  - {fileID: 1402374907}
   - {fileID: 439494595}
